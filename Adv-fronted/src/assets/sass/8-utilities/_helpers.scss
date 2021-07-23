@@ -1,0 +1,146 @@
+// ----------------------------------------------
+// HELPERS
+// ----------------------------------------------
+
+// Display
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+// float
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.u-clear {
+  clear: both;
+}
+
+// align
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Responsive Images
+.responsive-image {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+// Display State
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+// hidden props
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+// vertical
+.u-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+// horizontal
+.u-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+
+// No Padding
+.no-padding {
+	padding: 0;
+}
+
+// No Padding
+.stretch-content {
+	padding-right: 0;
+
+	@include mobile {
+		padding-right: 20px;	
+	}
+}
+
+// Block with White bG and Black border
+.outline-block {
+  border: 1px solid palette(mono, black);
+  background: palette(mono, white);
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+
+// Margins
+.no-margin {
+	margin: 0;
+}
+
+.no-border {
+  border: 0;
+}
+
+/* vertical margins */
+.margin-top--md {
+    margin-top: var(--space-md);
+}
+
+.margin-top--sm {
+    margin-top: var(--space-sm);
+}
+
+.margin-top--lg {
+    margin-top: var(--space-lg);
+}
+
+.margin-top--xl {
+    margin-top: var(--space-xl);
+}
+
+.margin-top--xxl {
+    margin-top: var(--space-xxl);
+}
+
+.margin-bottom--sm {
+    margin-bottom: var(--space-sm);
+}
+
+.margin-bottom--lg {
+    margin-bottom: var(--space-lg);
+}
+
+.margin-bottom--xl {
+    margin-bottom: var(--space-xl);
+}
+
+.margin-bottom--xxl {
+    margin-bottom: var(--space-xxl);
+}

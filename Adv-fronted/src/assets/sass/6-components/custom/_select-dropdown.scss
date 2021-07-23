@@ -1,0 +1,49 @@
+// ----------------------------------------------
+// Select number of clients
+// ----------------------------------------------
+
+.dropdown {
+
+    .dropdown-filter {
+        position: fixed;
+        width: 245px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: auto;
+    }
+
+    ul {
+
+        &.dropdown-items {
+            padding: 10px;
+            margin-top: 43px;
+            height: 200px;
+            overflow-y: scroll;
+            width: 262px;
+        }
+    }
+
+    a {
+
+        &.select-advanced-toggle {
+            padding: 9px 15px 10px 15px;
+            border: 1px solid palette(border, base);
+            display: block;
+            border-radius: 6px;
+            color: palette(input, focus);
+
+            .caret {
+                float: right;
+            }
+
+            .value {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+        }
+        
+    }
+
+}

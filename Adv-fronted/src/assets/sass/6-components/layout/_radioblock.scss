@@ -1,0 +1,62 @@
+// ----------------------------------------------
+// LABEL WITH TWO RADIO
+// ----------------------------------------------
+
+.c-radioblock {
+  background: palette(blue, base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px -50px 20px -50px;
+  padding: 17px 30px 17px 50px;
+
+  &--bg-light {
+    background: palette(blue, extra-light);
+  }
+
+  &--no-bg {
+    background: transparent;
+  }
+
+  &--equal-pd {
+    padding: 17px 50px 17px 50px;
+  }
+
+  &--first {
+    margin-top: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      margin-right: 7px;
+    }
+
+    span {
+      color: palette(mono, grey);
+    }
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.text-block {
+  &.text-block--dashed-border {
+    border: 1px dashed palette(mono, light);
+    padding: 20px;
+
+    p {
+      margin-bottom: 0;
+      font-size: 15px;
+    }
+  }
+}

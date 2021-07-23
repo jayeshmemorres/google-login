@@ -1,0 +1,69 @@
+// ----------------------------------------------
+// TABBAR
+// ----------------------------------------------
+
+.c-tabbar {
+    
+    .nav-tabs {
+        background-color: palette(blue, base);
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        
+        @include mobile {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .nav-link {
+            border-radius: 6px;
+            padding: 10px 20px 10px 20px;
+            margin-right: 15px;
+            background-color: palette(blue, light);
+            color: palette(mono, white);
+            min-width: 230px;
+            font-weight: 500;
+            position: relative;
+
+            &.active {
+                background-color: palette(mono, white);
+                color: palette(blue, light);
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -34px;
+                    border: 0.8rem solid transparent;
+                    border-top-color: palette(blue, base);
+                    right: 0;
+                    left: 0;
+                    margin: 0 auto;
+                    width: 10px;
+
+                    @include mobile {
+                        bottom: -22px;
+                        border-top-color: palette(mono, white);
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 40px 50px !important;
+	
+        @include mobile {
+            padding: 20px 20px !important;
+        }
+
+        .o-icon {
+
+            @include mobile {
+                position: relative;
+                bottom: 46px;
+                right: 0;
+            }
+        }
+    }
+}

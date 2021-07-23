@@ -1,0 +1,152 @@
+// ----------------------------------------------
+// SIDEBAAR
+// ----------------------------------------------
+
+.c-sidebar {
+    position: fixed;
+    width: 250px;
+    min-height: 100vh;
+    background-color: palette(blue, base);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-y: auto;
+    max-height: 500px;
+
+    &__brand {
+        text-align: center;
+        padding: 30px;
+    }
+
+    &__logo {
+
+        &--icon {
+            display: none;
+        }
+    }
+
+    &__nav {
+        margin-top: 50px;
+    }
+
+    &__nav-link {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        transition: all .3s;
+
+        img {
+            width: 24px;
+            transition: all .3s;
+        }
+
+        span {
+            color: palette(mono, white);
+            font-family: $primary-font;
+            margin-left: 10px;
+            transition: all .3s;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &--active {
+            background-color: palette(mono, white);
+            transition: all .5s;
+
+            img {
+                filter: grayscale(100%) brightness(8%) sepia(70%) hue-rotate(-190deg) saturate(340%) contrast(0.9);
+                transition: all .3s;
+            }
+
+            span {
+                color: palette(blue, base);
+                transition: all .5s;
+            }
+        }
+
+        &:hover {
+            background-color: palette(mono, white);
+            transition: all .5s;
+
+            img {
+                filter: grayscale(100%) brightness(8%) sepia(70%) hue-rotate(-190deg) saturate(340%) contrast(0.9);
+                transition: all .3s;
+            }
+
+            span {
+                color: palette(blue, base);
+                transition: all .5s;
+            }
+        }
+    }
+
+    &__card {
+        text-align: center;
+        color: palette(mono, white);
+        background-color: palette(blue, fade);
+        border-radius: 8px;
+        margin: 150px 30px 30px 30px;
+
+        img {
+            margin-top: -66px;
+        }
+    }
+
+    &__card-content {
+        padding: 20px 10px 20px 10px;
+
+        span {
+            font-family: $primary-font;
+        }
+
+        p {
+            font-family: $primary-font;
+            color: palette(blue, text);
+            opacity: 0.6;
+            line-height: 24px;
+            margin-top: 10px;
+        }
+    }
+
+    &--closed {
+        width: 65px;
+        overflow: hidden;
+
+        .c-sidebar {
+
+            &__brand {
+                padding: 15px;
+            }
+
+            &__logo {
+                display: none;
+
+                &--icon {
+                    display: inline;
+                    padding-top: 18px;
+                }
+            }
+
+            &__nav {
+                margin-top: 82px;
+            }
+
+            &__nav-link {
+                justify-content: center;
+
+                span {
+                    display: none;
+                }
+            }
+
+            &__card {
+                margin: 15px;
+                background-color: transparent;
+            }
+
+            &__card-content {
+                display: none;
+            }
+        }
+    }
+}

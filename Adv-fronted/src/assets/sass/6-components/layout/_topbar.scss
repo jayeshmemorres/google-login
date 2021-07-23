@@ -1,0 +1,46 @@
+// ----------------------------------------------
+// TOPBAR
+// ----------------------------------------------
+
+.c-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: palette(blue, base);
+    color: palette(mono, white);
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    &__heading {
+        font-size: 22px;
+        font-weight: 500;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    &__date {
+        font-weight: 500;
+
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+}
+
+// Content
+
+.usage-information {
+    padding: 50px 50px 0 50px;
+    h6 {
+        color: palette(mono, black);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        text-transform: none;
+    }
+}

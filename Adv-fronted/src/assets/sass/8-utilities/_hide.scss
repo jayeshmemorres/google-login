@@ -1,0 +1,22 @@
+// ----------------------------------------------
+// HIDE
+// ----------------------------------------------
+
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+@mixin visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    word-wrap: normal;
+}
+
+.u-hidden-visually {
+    @include visually-hidden();
+}

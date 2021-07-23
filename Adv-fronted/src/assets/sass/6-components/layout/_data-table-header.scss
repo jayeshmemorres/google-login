@@ -1,0 +1,31 @@
+.card-headers {
+  display: none;
+  @include mobile {
+    color: #1c1c1c;
+    display: inline;
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+}
+
+.cardtable-icons {
+  display: flex;
+  font-size: 24px;
+  color: #c71a2e;
+  font-weight: 600;
+  flex-direction: row;
+  margin-top: 7px;
+  justify-content: space-between;
+  &__cardtables {
+    display: flex;
+    //     justify-content: space-around;
+  }
+  // &__text {
+  //   min-width: 90px;
+  //   max-width: 90px;
+    
+  // }
+  &__icon1 {
+    color: #c71a2e;
+  }
+}

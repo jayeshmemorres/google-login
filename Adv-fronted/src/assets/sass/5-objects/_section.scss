@@ -1,0 +1,90 @@
+// ----------------------------------------------
+// SECTION
+// ----------------------------------------------
+
+section {
+  position: relative;
+  padding: 100px 0px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  @include tablet {
+    padding: 50px 0;
+  }
+
+  @include laptop {
+    padding: 65px 0 50px;
+  }
+
+  @include laptop-large {
+    // padding: 70px 0 50px;
+  }
+
+  &--more-v-spacing {
+    padding: 100px 0 100px;
+
+    @include tablet {
+      padding: 70px 0 70px;
+    }
+
+    @include mobile {
+      padding: 50px 0 50px;
+    }
+  }
+
+  &--less-v-spacing {
+    padding: 60px 0 60px;
+
+    @include tablet {
+      padding: 40px 0 40px;
+    }
+
+    @include mobile {
+      padding: 20px 0 20px;
+    }
+  }
+
+  &--no-spacing {
+    padding: 0px;
+
+    @include tablet {
+      padding: 0px;
+    }
+
+    @include mobile {
+      padding: 0px;
+    }
+  }
+
+  &--collapse-bottom {
+    padding-bottom: 0;
+  }
+
+  &--full-screen {
+    height: 100vh;
+  }
+
+  &--gray {
+    background-color: palette(mono, light);
+  }
+
+  &--dark,
+  &--black {
+    background-color: palette(mono, black);
+    color: palette(mono, white);
+  }
+}
+
+.o-section {
+  padding: 40px 0px;
+  margin-bottom: 50px;
+
+  @include mobile {
+    padding: 25px 0px;
+  }
+}

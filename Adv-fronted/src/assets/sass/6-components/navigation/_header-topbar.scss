@@ -1,0 +1,25 @@
+// ----------------------------------------------
+// TOPBAR-HEADER
+// ----------------------------------------------
+
+.c-header-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logout {
+        margin-right: 15px;
+        color: palette(border, base);
+        font-weight: 500;
+
+        &.user-name {
+            color: palette(mono, black);
+        }
+    }
+}

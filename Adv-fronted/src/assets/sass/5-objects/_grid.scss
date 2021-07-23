@@ -1,0 +1,72 @@
+// ----------------------------------------------
+// GRID
+// ----------------------------------------------
+.container,
+.container-fluid {
+	width: 100%;
+	padding-right: 40px;
+	padding-left: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-top: 25px;
+	// color:grey
+	
+}
+
+.container-wrapper {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+ 
+}
+
+@media (max-width: 767px){
+	.container,
+	.container-fluid {
+			  padding: 0 15px;
+	  }
+  }
+
+@media (min-width: 767px){
+  .container,
+  .container-fluid {
+	    // max-width: inherit;
+			padding: 0 15px;
+	}
+}
+
+@media (min-width: 992px){
+  .container,
+  .container-fluid {
+	    max-width: 100%;
+		padding: 0 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1260px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		max-width: 1520px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container {
+		max-width: 1500px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.container {
+		max-width: 1800px;
+	}
+}

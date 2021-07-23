@@ -1,0 +1,25 @@
+// ----------------------------------------------
+// BLOCKQUOTE
+// ----------------------------------------------
+
+
+blockquote {
+	border-left: 0.25rem solid;
+	font-style: italic;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-color: palette(blue, base);
+
+	p {
+		font-size: inherit;
+		color: #9a9a9a;
+		padding-left: 10px;
+		text-align:center;// reove
+	}
+}
+
+.author-name {
+	font-family: "Playfair Display", serif;
+	color:  palette(blue, base);
+	font-size: 24px;
+}

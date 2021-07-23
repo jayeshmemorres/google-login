@@ -1,0 +1,14 @@
+.main-block {
+    margin-top: 60px;
+
+
+    .head{
+        @include mobile {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    @include mobile {
+        margin-top: 30px;
+    }
+}

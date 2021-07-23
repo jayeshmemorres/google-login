@@ -1,0 +1,253 @@
+// ----------------------------------------------
+// TABLE
+// ----------------------------------------------
+// .table-responsive {
+//   overflow: visible;
+// }
+.table {
+  // border-collapse: collapse;
+  border: 1px solid#CFD8DC;
+  border-radius: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  thead {
+    tr {
+      th {
+        border: 0;
+        border-bottom: 1px solid #cfd8dc;
+        font-weight: 600;
+        // padding: 15px;
+        vertical-align: middle;
+        position: relative;
+        text-transform: capitalize;
+        .sort-icon {
+          position: absolute;
+          top: 25px;
+          right: auto;
+          margin-left: 5px;
+          transition: all 0.2s;
+          cursor: pointer;
+
+          &--down {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    // border-collapse: collapse;
+    tr {
+      // border: 0;
+      border: 1px solid#CFD8DC;
+      border-radius: 5px;
+      // border-spacing: 35px 1rem;
+      // padding: 10px 10px 10px 10px;
+      &:nth-child(odd) {
+        background-color: #fff9f9;
+      }
+
+      &.no-background {
+        background-color: transparent;
+      }
+
+      td {
+        border: 0px;
+        border-collapse: collapse;
+        border-bottom: 1px solid #CFD8DC ;
+        // margin: 10px 40px 10px 40px;
+        vertical-align: middle;
+
+        &.text-blue {
+          color: palette(blue, base);
+        }
+
+        .userinfo {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 15px;
+          }
+        }
+
+        .template-info {
+          &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            span {
+              color: palette(mono, grey);
+              margin-right: 10px;
+              min-width: 110px;
+            }
+
+            p {
+              margin: 0;
+              font-weight: 600;
+            }
+
+            &--border {
+              background-color: palette(mono, white);
+              //  border: 1px solid palette(blue, base);
+              border-radius: 5px;
+              padding: 9px 14px;
+              width: 275px;
+            }
+          }
+        }
+
+        &.table-action-buttons {
+          .o-icon {
+            img {
+              width: 20px;
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .datetime-container {
+    .table-picker {
+      table {
+        background-color: palette(mono, white);
+
+        th {
+          padding: 5px 10px;
+          border: 0;
+          border-radius: 0;
+        }
+
+        tr {
+          border: 0;
+          border-radius: 0;
+          background-color: inherit;
+          &:nth-child(odd) {
+            background-color: inherit;
+          }
+        }
+
+        td {
+          border: 0;
+          padding: 0;
+          color: inherit;
+          font-family: $primary-font;
+          border-radius: 0;
+
+          &.rdtActive {
+            color: palette(mono, white);
+          }
+
+          &.rdtOld,
+          &.rdtNew,
+          &.rdtDisabled {
+            color: palette(blue, base);
+          }
+        }
+      }
+
+      .rdtPicker {
+        .rdtMonths,
+        .rdtYears {
+          min-width: 220px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &.border-collapse {
+    border-collapse: collapse;
+  }
+}
+
+.small-table {
+  thead {
+    tr {
+      th {
+        border: 0;
+        padding: 5px;
+        vertical-align: middle;
+        position: relative;
+        text-transform: none;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border: 0px;
+        // padding: 5px;
+        vertical-align: middle;
+
+        .form-group {
+          margin: 0;
+
+          .form-control {
+            height: 40px;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: transparent;
+      }
+
+      &.has-border {
+        border-top: 1px solid palette(border, base);
+      }
+    }
+  }
+
+  &.align-left-center {
+    thead {
+      tr {
+        th {
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+
+          .form-check-inline {
+            margin: 0;
+
+            .form-check-label {
+              margin: 0;
+
+              &::before {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

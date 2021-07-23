@@ -1,0 +1,111 @@
+// ------------------------------------------------------------------------
+// Bootstrap - A framework for building responsive, mobile-first sites, with BootstrapCDN.
+// ------------------------------------------------------------------------
+@import "~bootstrap/scss/bootstrap";
+// @import "react-datetime/css/react-datetime.css";
+
+// ------------------------------------------------------------------------
+// Settings - Global variables like fonts and colors.
+// ------------------------------------------------------------------------
+@import "1-settings/colors";
+@import "1-settings/fonts";
+@import "1-settings/variables";
+
+// ------------------------------------------------------------------------
+// Tools - Default mixins.
+// ------------------------------------------------------------------------
+@import "2-tools/media-queries";
+@import "2-tools/mixins";
+@import "2-tools/modifier";
+
+// ------------------------------------------------------------------------
+// Generic - Ground-zero styles (resets, box-sizing, etc.).
+// ------------------------------------------------------------------------
+@import "3-generic/box-sizing";
+@import "3-generic/normalize";
+@import "3-generic/reset";
+@import "3-generic/shared";
+
+// ------------------------------------------------------------------------
+// Elements - Unclassed HTML elements (type selectors).
+// ------------------------------------------------------------------------
+@import "4-elements/blockquote";
+@import "4-elements/body";
+@import "4-elements/em";
+@import "4-elements/headings";
+@import "4-elements/hr";
+@import "4-elements/html";
+@import "4-elements/images";
+@import "4-elements/links";
+@import "4-elements/lists";
+@import "4-elements/tables";
+@import "4-elements/fieldset";
+
+// ------------------------------------------------------------------------
+// Objects - Undecorated design patterns.
+// ------------------------------------------------------------------------
+@import "5-objects/grid";
+@import "5-objects/form";
+@import "5-objects/section";
+@import "5-objects/tile";
+@import "5-objects/scrollbar";
+@import "5-objects/wrapper";
+@import "5-objects/icon";
+
+// ------------------------------------------------------------------------
+// Components - specific UI components.
+// ------------------------------------------------------------------------
+
+@import "6-components/bootstrap/input-number.scss";
+@import "6-components/bootstrap/navbar.scss";
+@import "6-components/bootstrap/tabbar.scss";
+@import "6-components/bootstrap/modal.scss";
+@import "6-components/bootstrap/card.scss";
+
+@import "6-components/button/buttons.scss";
+
+@import "6-components/custom/datetimepicker.scss";
+@import "6-components/custom/select-dropdown.scss";
+
+@import "6-components/layout/topbar.scss";
+@import "6-components/layout/radioblock.scss";
+@import "6-components/layout/intro-block.scss";
+@import "6-components/layout/table-card.scss";
+@import "6-components/layout/card-form.scss";
+@import "6-components/layout/data-table.scss";
+@import "6-components/layout/data-table-header.scss";
+@import "6-components/navigation/header.scss";
+@import "6-components/navigation/header-topbar.scss";
+@import "6-components/layout/pagination.scss";
+
+@import "6-components/overlays/sidebar.scss";
+
+@import "6-components/custom/main-block.scss";
+@import "6-components/custom/datetimepicker.scss";
+@import "6-components/custom/select-dropdown.scss";
+
+@import "6-components/layout/topbar.scss";
+@import "6-components/layout/radioblock.scss";
+@import "6-components/layout/intro-block.scss";
+@import "6-components/layout/table-card.scss";
+@import "6-components/layout/data-table.scss";
+@import "6-components/layout/data-table-header.scss";
+@import "6-components/layout/card-form.scss";
+
+@import "6-components/navigation/header.scss";
+@import "6-components/navigation/header-topbar.scss";
+
+@import "6-components/overlays/sidebar.scss";
+
+// ------------------------------------------------------------------------
+// Page - specific page design
+// ------------------------------------------------------------------------
+
+@import "7-page/main-panel.scss";
+@import "7-page/dashboard.scss";
+
+// ------------------------------------------------------------------------
+// Utilities - Helpers and overrides.
+// ------------------------------------------------------------------------
+@import "8-utilities/helpers";
+@import "8-utilities/hide";

@@ -1,0 +1,21 @@
+// ----------------------------------------------
+// ICON / IMAGES
+// ----------------------------------------------
+
+.o-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        width: 36px;
+        cursor: pointer;
+    }
+
+    &.input-icon {
+        position: absolute;
+        right: 13px;
+        top: 12px;
+        width: 25px;
+    }
+}

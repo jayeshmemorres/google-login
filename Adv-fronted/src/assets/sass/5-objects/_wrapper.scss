@@ -1,0 +1,22 @@
+// ----------------------------------------------
+// WRAPPER OR CONTENT
+// ----------------------------------------------
+
+
+.o-wrapper {
+  width: 100%;
+  transition: all .3s;
+  position: relative;
+  margin-bottom: 40px;
+
+  &.toggle {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all .3s;
+    position: relative;
+    top: 0;
+    left: 250px;
+    padding: 20px 25px;
+  }
+  
+}

@@ -1,0 +1,46 @@
+.c-dashboard {
+    display: grid;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+        "sidebar  header  header"
+        "sidebar  content content"
+        "sidebar  footer   footer";
+
+
+
+
+    .sidebar {
+        grid-area: sidebar;
+        color: blue;
+        background-color: cadetblue;
+        display: grid;
+        justify-content: center;
+
+        ul {
+            height: 270px;
+            display: grid;
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    .header {
+        grid-area: header;
+        background-color: cadetblue;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .content{
+        grid-area:content;
+        background-color: cornsilk;
+    }
+
+}

@@ -1,0 +1,86 @@
+// ----------------------------------------------
+// TABLE CARD
+// ----------------------------------------------
+
+.table-card {
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    // border: 1px solid#CFD8DC;
+    margin: 0 0 30px 0;
+
+    thead {
+        th { 
+            color:palette(blue,base);
+            //  border: 5px solid #CFD8DC;//
+            
+        }
+    }
+
+    .card-header {
+        padding: 20px 30px;
+        background-color: transparent;
+         border-bottom: 1px solid palette(card, border);
+
+        h4 {
+            margin-bottom: 0;
+        }
+
+        form {
+            .form-group {
+                margin: 0;
+            }
+        }
+
+        &__item {
+
+            span {
+                margin-top: 5px;
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        &--with-icon {
+            padding: 15px 30px;
+
+            img {
+                width: 36px;
+            }
+        }
+
+        &--with-navbar {
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    font-size: 11px;
+                    margin: 0 0 0 10px;
+                    cursor: pointer;
+
+                    &.active {
+                        padding: 3px 12px;
+                        background: palette(blue, light);
+                        color: palette(blue, base);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 30px;
+
+        &.has-table {
+            padding: 15px 30px 15px 30px;
+        }
+
+        table {
+            .form-group {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

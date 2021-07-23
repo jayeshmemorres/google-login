@@ -1,0 +1,41 @@
+// ----------------------------------------------
+// INPUT NUMBER
+// ----------------------------------------------
+
+.input-number {
+    display: flex;
+    align-items: center;
+    margin: 0px 0 35px 0;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5px 0 25px 0;
+    }
+
+    .form-group {
+        min-width: 300px;
+        margin: 0;
+
+        label.form-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #252525;
+            min-width: 700px;
+
+            @include mobile {
+                min-width: 100%;
+            }
+        }
+    }
+
+    .c-button {
+        margin: 9px 0px 0 20px;
+        min-width: 110px;
+
+        @include mobile {
+            margin: 20px 0px 0 0px;
+            min-width: 100px;
+        }
+    }
+}

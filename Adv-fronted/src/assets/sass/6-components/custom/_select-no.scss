@@ -1,0 +1,25 @@
+// ----------------------------------------------
+// Select number of clients
+// ----------------------------------------------
+
+.select-no-of-clients {
+    display: flex;
+    align-items: flex-end;
+    margin: 50px 0 50px 0;
+
+    .form-group {
+        min-width: 300px;
+        margin: 0;
+
+        label.form-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #252525;
+        }
+    }
+
+    .c-button {
+        margin: 0 0px 0 20px;
+        min-width: 110px;
+    }
+}

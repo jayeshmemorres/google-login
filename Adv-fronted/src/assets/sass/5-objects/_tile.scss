@@ -1,0 +1,95 @@
+// ----------------------------------------------
+// TILE
+// ----------------------------------------------
+
+.o-tile {
+
+    &--login-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 30px 0 30px;
+        height: 100vh;
+        box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.45);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+        .o-tile__content {
+            margin-top: 50px;
+
+            .o-tile__content-list {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+
+                img {
+                    width: 20px;
+                    padding-top: 8px;
+                }
+
+                p {
+                    margin: 0;
+                    color: palette(mono, white);
+                    font-size: 18px;
+                    line-height: 34px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        img {
+            width: 130px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        form {
+            margin-top: 10px;
+            width: 450px;
+        }
+    }
+
+    &__form-title {
+        span {
+            font-family: $primary-font;
+            font-size: 38px;
+            color: palette(blue, base);
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            color: palette(mono, grey);
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+
+    &--bluecard {
+        background: palette(blue, base);
+        border: 1px solid rgba(119, 134, 158, 0.2);
+        text-align: center;
+        padding: 30px 15px;
+        border-radius: 6px;
+
+        span {
+            font-family: $primary-font;
+            font-size: 32px;
+            color: palette(blue, base);
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: 18px;
+            color: palette(blue, base);
+            margin-bottom: 0;
+        }
+    }
+}

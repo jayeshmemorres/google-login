@@ -1,0 +1,497 @@
+.product-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include mobile {
+      align-items: flex-start;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__total-product {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  &__price {
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+  &__image {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  &__name {
+    min-width: 300px;
+    max-width: 300px;
+
+    @include mobile {
+      font-size: 18px;
+      font-weight: 600;
+      min-width: inherit;
+      max-width: inherit;
+      margin-bottom: 15px;
+    }
+
+    @include tablet {
+      min-width: 240px;
+      max-width: 240px;
+    }
+
+    @include laptop {
+      min-width: 200px;
+      max-width: 200px;
+    }
+
+    @include laptop-large {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+
+
+
+  &__adminname {
+    min-width: 200px;//300px//240
+    max-width: 200px;//300px//240
+
+    @include mobile {
+      font-size: 18px;
+      font-weight: 600;
+      min-width: inherit;
+      max-width: inherit;
+      margin-bottom: 15px;
+    }
+
+    @include tablet {
+      min-width: 190px;
+      max-width: 190px;
+    }
+
+    @include laptop {
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    @include laptop-large {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+
+  &__icon-adminitem {
+    margin: 0 15px;
+    min-width: 115px;
+    max-width: 115px;
+    display: flex;
+    @include mobile {
+      margin: inherit;
+      min-width: inherit;
+      max-width: inherit;
+    }
+    @include tablet {
+      margin: 0 10px;
+      min-width: 40px;//70px
+      max-width: 40px;//70px
+    }
+    @include laptop {
+      margin: 0 10px;
+      min-width: 50px;//70px
+      max-width: 50px;//70px
+      span {
+        
+          display: none;
+        
+    }
+  }
+    @include laptop-large {
+      margin: inherit;
+      min-width: inherit;
+      max-width: inherit;
+    }
+  }
+
+
+
+
+
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include mobile {
+      justify-content: space-between;
+      margin-top:12px;//
+    }
+  }
+  &__detail-heading {
+    margin: 0 15px;
+    min-width: 114px;//150px//128
+    max-width: 114px;//150px//128
+    @include mobile {
+      min-width: inherit;
+      max-width: inherit;
+      margin: inherit;
+      
+    }
+    @include tablet {
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    @include laptop {
+      min-width: 110px;
+      max-width: 110px;
+    }
+
+    @include laptop-large {
+      min-width: 110px;
+      max-width: 110px;
+    }
+    span {
+      @include mobile {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__image {
+    img {
+      width: 60px;
+      @include mobile {
+        width: 86px;
+        height: 86px;//
+        object-fit: cover;//
+      }
+    }
+  }
+  &__view {
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__city {
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__hour {
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__total-product {
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+
+  //////@at-root
+  &__icon-sold{
+
+  min-width: 34px;
+
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-left:7px;
+
+    img {
+      @include mobile {
+        width: 35px;//26.no marging
+        margin-left:5px;
+      }
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  &__icon-item {
+    margin: 0 15px;
+    min-width: 150px;
+    max-width: 150px;
+    @include mobile {
+      margin: inherit;
+      min-width: inherit;
+      max-width: inherit;
+    }
+  }
+  &--heading {
+    color: #9e0718;
+    font-size: 18px;
+    font-weight: 500;
+    @include mobile {
+      display: none;
+    }
+  }
+  &--content {
+    color: #1c1c1c;
+    font-weight: 500;
+
+    @include mobile {
+      background: #ffffff !important;
+    }
+  }
+  &--content:nth-child(even) {
+    background-color: #fff9f9;
+  }
+
+  ///////////   USER LIST PAGE ///////////
+  &__Sno {
+    min-width: 60px;
+    max-width: 60px;
+    @include mobile {
+      min-width: 20px;
+      max-width: 20px;
+    }
+    @include tablet {
+      min-width: 60px;
+      max-width: 60px;
+    }
+  }
+  &__Email {
+    min-width: 250px;
+    max-width: 250px;
+    @include mobile {
+      min-width: 125px;
+      max-width: 125px;
+    }
+    @include tablet {
+      min-width: 130px;
+      max-width: 130px;
+    }
+    @include laptop {
+      min-width: 150px;
+      max-width: 150px;
+    }
+  }
+    
+  
+  &__userlist-name {
+    min-width: 250px;
+    max-width: 250px;
+
+    @include mobile {
+      font-size: 18px;
+      font-weight: 600;
+      min-width: 210px;
+      max-width: 210px;
+      margin-bottom: 5px;
+    }
+
+    @include tablet {
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    @include laptop {
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    @include laptop-large {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+
+
+
+
+
+  &__phone-number {
+    min-width: 170px;
+    max-width: 170px;
+
+    @include mobile {
+     display: none;
+    }
+
+    @include tablet {
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    @include laptop {
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    @include laptop-large {
+      min-width: 200px;
+      max-width: 200px;
+    }
+  }
+
+
+
+
+
+
+  &__mobile-phone{
+    display: none;
+    
+ 
+     @include tablet {
+      display: none;
+     }
+     @include mobile {
+      display: block;
+     }
+ 
+     @include laptop {
+      display: none;
+     }
+ 
+     @include laptop-large {
+      display: none;
+     }
+  }
+
+
+
+
+
+
+  &__total-product {
+    min-width: 150px;
+    max-width: 150px;
+    @include mobile {
+      min-width: none;
+      max-width: none;
+    }
+    @include tablet {
+      min-width: 130px;
+      max-width: 130px;
+    }
+    @include laptop {
+      min-width: 130px;
+      max-width: 130px;
+    }
+  }
+  &__col2 {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__colfour {
+    display: flex;
+    min-width: 200px;
+    max-width: 200px;
+    @include mobile {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+
+  &__col3 {
+    display: flex;
+  }
+
+  &__userlist-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    img {
+      @include mobile {
+        width: 26px;
+      }
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    // display: flex;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 7px 2px 7px;
+    background-color: #9e0718;
+    border-radius: 3px;
+    text-align: center;
+    // min-width: inherit;
+    // max-width: inherit;
+
+    &:hover {
+      color: white;
+      text-decoration: inherit;
+    }
+    // pointer-events: none;
+    @include mobile {
+      display: flex;
+      padding: inherit;
+      background-color: white;
+      text-align: center;
+      color: #9e0718;
+      text-decoration: underline;
+      min-width: 90px;
+      max-width: 90px;
+    }
+  } 
+  &__button {
+    display: flex;
+  }
+  &__button-product {
+    display: flex;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+// ----------------------------------------------
+// Themes Color Style
+// ----------------------------------------------
+
+// palette(mono, black);
+
+@function palette($palette, $tone: 'base') {
+    @return map-get( map-get($palettes, $palette), $tone );
+}
+
+$palettes: (
+    mono: (
+        white:        #ffffff,
+        light:        #DADADA,
+        dark:         #3855B3,
+        black:        #3855B3,
+        dark-black:   #1C1C1C,
+    ),
+    
+    blue: (
+        extra-light:  #E2F4FF,
+        light:         #C71A2E,
+        base:        #3855B3,//blue
+        dark:        #3855B3// #194a82,
+    ),
+
+    border: (
+        base:         #aaaaaa,
+    ),
+
+    input: (
+        placeholder:   #999999,
+        focus:         #999999,
+        
+    ),
+
+    datepiker: (
+        rdtOld:       #d9dbe6,
+        rdtOld-hover: #f0f2f9,
+    ),
+    card: (
+        border:       #ECECEC,
+    ),
+
+);

@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  .page-link {
+    background-color: #ffffff;
+    border: 1px solid #dfe3e8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: black;
+  }
+  .page-item {
+    margin: 5px;
+    margin-bottom: 25px;
+  }
+  .page-item.active .page-link {
+    color: #fff;
+    background-color: #c71a2e;
+    border-color: #c71a2e;
+    border-radius: 4px;
+  }
+
+  .page-item.disabled .page-link {
+    color: #c4cdd5;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #919eab;
+    border-color: #919eab;
+    border-radius: 4px;
+  }
+  .page-item:last-child .page-link {
+    color: #c4cdd5;
+  
+}
+}

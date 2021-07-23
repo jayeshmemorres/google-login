@@ -1,0 +1,105 @@
+// ----------------------------------------------
+// INTRODUCTORY WORD
+// ----------------------------------------------
+
+.introductory-words {
+    background-color: #ecf1f8;
+    color: #4c5058;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    &__content {
+        max-width: 68%;
+
+        @include mobile {
+            max-width: 100%;
+        }
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        margin-bottom: 12px;
+        line-height: 24px;
+
+        @include mobile {
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        margin: -8px 0px 15px 0px;
+
+        @include mobile {
+            margin: -8px 0px 10px 0px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        li {
+            padding-left: 17px;
+            margin-bottom: 0px;
+            line-height: 24px;
+
+            @include mobile {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .bluechip-introductory-team {
+        position: absolute;
+        top: 36px;
+        right: 10px;
+
+        @include mobile {
+            top: auto;
+            right: -100px;
+            bottom: -60px;
+        }
+
+        @include tablet {
+            top: auto;
+            right: -100px;
+            bottom: -60px;
+        }
+
+        img {
+            opacity: 0.9;
+            width: 360px;
+
+            @include mobile {
+                opacity: 0.1;
+                width: 260px;
+            }
+
+            @include tablet {
+                opacity: 0.1;
+                width: 260px;
+            }
+        }
+    }
+}
+
+
+.instructions {
+    font-size: 14px;
+}

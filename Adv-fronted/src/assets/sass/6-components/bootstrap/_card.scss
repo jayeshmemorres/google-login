@@ -1,0 +1,101 @@
+// ----------------------------------------------
+// CARD
+// ----------------------------------------------
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #CFD8DC;
+    margin: 0 0 30px 0;
+    padding: 30px;
+
+    @include mobile {
+        padding: 15px;
+    }
+
+    &.no-bg{
+        @include mobile {
+            padding: 0;
+            background-color:transparent;
+            border: 0px;
+        }
+    }
+
+    .card-header {
+        padding: 0px 20px 17px 30px;
+        background-color: transparent;
+        border-bottom: 1px solid palette(card, border);
+        margin: -10px -30px 0px -30px;
+
+        @include mobile {
+            padding: 10px 15px 10px 15px;
+            margin: -10px 0px 0px -15px;
+        }
+
+        h4 {
+            margin-bottom: 0;
+            color: #9E0718;
+        }
+
+        form {
+            .form-group {
+                margin: 0;
+            }
+        }
+
+        &__item {
+
+            span {
+                margin-top: 5px;
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        &--with-icon {
+            padding: 15px 30px;
+
+            img {
+                width: 36px;
+            }
+        }
+
+        &--with-navbar {
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    font-size: 11px;
+                    margin: 0 0 0 10px;
+                    cursor: pointer;
+
+                    &.active {
+                        padding: 3px 12px;
+                        background: palette(blue, light);
+                        color: palette(blue, base);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-body {
+        padding: 30px;
+
+        @include mobile {
+            padding: 20px 0;
+        }
+
+        &.has-table {
+            padding: 15px 30px 15px 30px;
+        }
+
+        table {
+            .form-group {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

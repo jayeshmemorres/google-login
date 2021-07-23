@@ -1,0 +1,92 @@
+// ----------------------------------------------
+// DATE TIME 
+// ----------------------------------------------
+
+.datetime-container {
+    position: relative;
+
+    table {
+        background-color: palette(mono, white);
+    }
+    
+    .datetime-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 22px;
+    }
+
+    .form-control {
+        background-color: palette(mono, white);
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+            background-color: palette(blue, deep-light);
+        }
+    }
+
+    .rdtPicker {
+        width: 100%;
+        padding: 0;
+
+        th {
+            font-weight: 500;
+        }
+        
+        td {
+            height: 40px;
+            vertical-align: middle;
+            font-size: 16px;
+
+            &.rdtDay:hover, 
+            &.rdtHour:hover,
+            &.rdtMinute:hover, 
+            &.rdtSecond:hover,
+            &.rdtMonth:hover,
+            &.rdtYear:hover,
+            &.rdtTimeToggle:hover {
+                background-color: palette(datepiker, rdtOld-hover);
+            }
+
+            &.rdtActive {
+                background-color: palette(blue, base);
+
+                &:hover {
+                    background-color: palette(blue, base); 
+                }
+            }
+
+            &.rdtToday:before {
+                border-bottom-color: palette(blue, base);
+            }
+
+            &.rdtDisabled,
+            &.rdtOld {
+                color: palette(datepiker ,rdtOld);
+            }
+        }
+
+        thead tr:first-child th:hover {
+            background-color: palette(blue, light);
+        }
+    }
+
+    .rdtCounter {
+
+        .rdtCount {
+            height: auto;
+        }
+
+        .rdtBtn:hover {
+            background-color: palette(blue, light);
+        }
+    }
+
+}
+
+.rdt {
+    .form-control[readonly] {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,50 @@
+// ----------------------------------------------
+// NAVBAR
+// ----------------------------------------------
+
+.c-navbar {
+  padding: 20px 50px 0px 50px;
+  border-bottom: 1px solid palette(mono, light);
+  margin-bottom: 40px;
+
+  @include mobile {
+    padding: 5px 20px 0px 20px;
+  }
+
+  .nav {
+    .nav-item {
+      margin: 0;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      @include tablet {
+        width: 100%;
+      }
+      .hello {
+        cursor: default;
+      }
+      .nav-link {
+        padding: 10px 50px 22px 0px;
+        color: palette(mono, light);
+        font-weight: 500;
+        min-width: 230px;
+
+        @include mobile {
+          padding: 5px 20px 5px 0px;
+          min-width: 100%;
+          width: 100%;
+        }
+
+        .hello {
+            cursor: default;
+          }
+        &.active {
+          border-bottom: 1px solid palette(mono, black);
+          color: palette(mono, black);
+        }
+      }
+    }
+  }
+}
