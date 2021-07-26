@@ -4,25 +4,37 @@ import GoogleLogin from "react-google-login";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { authenticate} from '../helpers/auth';
+
+const regex=/^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$/
 const Login = () => {
   const history = useHistory();
+
+
+
+
+
+
   const responseSuss = (response) => {
-    axios({
-      method: "POST",
-      url: "http://localhost:2000/api/googlelogin",
-      data: { tokenId: response.tokenId },
-      headers: { "Content-Type": "application/json" },
-    }).then((response) => {
-      informParent(response);
-      console.log(
-        "fronted reponse by api",
-        // response.data.token,
-        response
-        // response.data.user.address
-      );
-    });
-    if (response) {
+    if( regex.test(response.profileObj.email)){
+      axios({
+        method: "POST",
+        url: "http://localhost:2000/api/googlelogin",
+        data: { tokenId: response.tokenId },
+        headers: { "Content-Type": "application/json" },
+      }).then((response) => {
+        informParent(response);
+        console.log(
+          "fronted reponse by api",
+          // response.data.token,
+          response
+          // response.data.user.address
+        );
+      });
+    }else{
+      alert("error please login with company id")
     }
+   
+    
   };
 
   const informParent = (response) => {
